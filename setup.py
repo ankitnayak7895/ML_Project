@@ -7,4 +7,4 @@ setup(
     author_email="ankitnayak7895@gmail.com",
     description="A package for predicting diamond prices using machine learning.",
     packages=find_packages()
-) 
+)
