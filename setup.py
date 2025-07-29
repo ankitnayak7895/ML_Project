@@ -6,5 +6,7 @@ setup(
     author="Ankit",
     author_email="ankitnayak7895@gmail.com",
     description="A package for predicting diamond prices using machine learning.",
-    packages=find_packages()
+    packages=find_packages(where='src'),
+    package_dir={"": "src"},
+    install_requires=[]
 )
