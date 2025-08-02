@@ -41,7 +41,7 @@ class DataIngestion:
                   data=pd.read_csv(Path(os.path.join("/home/ankit/INEURON/ML_Project/notebooks/data/cubic_zirconia.csv")))
                   logging.info('Data Loaded Successfully')
                   
-                  os.makedirs(os.path.join(self.ingestion_config.raw_data_path),exist_ok=True)
+                  os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
                   data.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
                   logging.info("Saved the raw data in artifacts folder")
                   
